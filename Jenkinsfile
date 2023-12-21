@@ -12,7 +12,7 @@ pipeline {
                 script {
                     dir('terraform') {
                         sh "terraform init"
-                        sh "terraform deploy -auto-approve"
+                        sh "terraform destroy -auto-approve"
                     }
                 }
             }
